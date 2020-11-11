@@ -26,13 +26,5 @@ class MultiLayerPerceptron:
             #layer = scipy.special.expit(o)
             #tanh
             layer = np.tanh(o)
-            
-             '''
-             Sigmoid
-             Tanh
-             
-             
-             RELU
-             logistic
-             '''
+     
         return layer
