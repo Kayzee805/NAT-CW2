@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-#np.random.seed(1234)
 
 def minimize_pso(cost_func, num_dimensions, num_iterations):
     num_particles = num_dimensions * 2
@@ -17,7 +16,10 @@ class PSOResult(object):
 
 
 class ParticleSwarm(object):
+    #np.random.seed(4545)
     def __init__(self, cost_func, num_dimensions, num_particles, chi=0.72984, phi_p=2.05, phi_g=2.05):
+        #print(np.random.get_state()[1][0])
+
         self.cost_func = cost_func
         self.num_dimensions = num_dimensions
 
