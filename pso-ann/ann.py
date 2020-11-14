@@ -5,7 +5,7 @@ import scipy.special
 #np.random.seed(123)
 
 class MultiLayerPerceptron:
-    np.random.seed(4512)
+    #np.random.seed(4512)
 
     def __init__(self, shape, weights=None):
         #print(np.random.get_state()[1][0])
@@ -22,24 +22,27 @@ class MultiLayerPerceptron:
 
 
     def run(self, data,activationLayer):
-
+    
         layer = data.T
+     #   print("layer shape = ",layer.shape)
         for i in range(self.num_layers-1):
             prev_layer = np.insert(layer, 0, 1, axis=0)
             o = np.dot(self.weights[i], prev_layer)
             # sigmoid
             if activationLayer=="sigmoid":
-
+               # layer = 1/(1+np.exp(-o))
                 layer = scipy.special.expit(o)
             elif activationLayer=="tanh":
                 layer = np.tanh(o)
             elif activationLayer=="relu":
                 layer = np.maximum(0,o)
+                #print(layer)
             else:
                 layer = o
             
             #print(o)
             #tanh
             #layer = np.tanh(o)
-     
+#print("layer shape = ",layer.shape)
+       # print(layer)
         return layer
