@@ -5,7 +5,7 @@ import scipy.special
 #np.random.seed(123)
 
 class MultiLayerPerceptron:
-    #np.random.seed(4512)
+    np.random.seed(4512)
 
     def __init__(self, shape, weights=None):
         #print(np.random.get_state()[1][0])
