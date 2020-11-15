@@ -35,8 +35,8 @@ class MultiLayerPerceptron:
                 
             elif activationLayer=="tanh":
                # print(activationLayer)
-                #layer = np.tanh(o)
-                layer = 2*scipy.special.expit(2*o)-1
+                layer = np.tanh(o)
+                #layer = 2*scipy.special.expit(2*o)-1
             elif activationLayer=="relu":
                 layer = np.maximum(0,o)
                 #print(layer)

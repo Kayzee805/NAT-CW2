@@ -17,6 +17,7 @@ class PSOResult(object):
 
 class ParticleSwarm(object):
     #np.random.seed(4545)
+    points =[]
     def __init__(self, cost_func, num_dimensions, num_particles, chi=0.72984, phi_p=2.05, phi_g=2.05):
         #print(np.random.get_state()[1][0])
 
@@ -29,8 +30,7 @@ class ParticleSwarm(object):
         self.phi_g = phi_g
 
         self.X = np.random.uniform(size=(self.num_particles, self.num_dimensions))
-        self.V = np.random.uniform(size=(self.num_particles, self.num_dimensions))
-
+        self.V = np.random.uniform(size=(self.num_particles, self.num_dimensions))   
         self.P = self.X.copy()
         self.S = self.cost_func(self.X)
         self.g = self.P[self.S.argmin()]
