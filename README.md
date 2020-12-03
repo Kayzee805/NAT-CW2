@@ -4,12 +4,10 @@ Natural Computing 2020/2021: Assignment 2
 ## Abstract
 We explore optimisation of Neural Networks with differing amounts of hidden neurons and layers using gradient-free algorithms. We see that in general, classical optimisation methods reminiscent of Stochastic Gradient Descent tend to perform better than gradient-free methods such as Particle Swarm Optimisation, Genetic Algorithms, and Genetic Programming. We see that although optima reached by gradient-free methods are not as 'good' as classical gradient-based methods, they are nevertheless good enough. That is, we reach very small errors on test sets generalising to unseen data. The main difference being time to converge.
 
-## Introduction
+## Overview
 We will explore gradient-free optimisation methods for optimising Neural Networks (NN). Including Particle Swarm Optimisation (PSO), Genetic Algorithms (GA), and Genetic Programming (GP). 
 
 Gradient-free algorithms will then be compared to baseline NNs optimised using standard gradient-based methods (view Appendix 1 for a description of baseline). Including the Stochastic gradient descent (SGD) classical way to optimise NNs, Adam an optimiser similar to SGD, and Limited memory Broyden Fletcher Goldfarb Shanno (LBFGS) quasi-Newton method for optimisation.
-
-======
 
 ## Install dependencies
 
