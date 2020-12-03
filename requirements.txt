@@ -4,3 +4,4 @@ matplotlib
 pylab
 scipy
 pandas
+jupyterlab
