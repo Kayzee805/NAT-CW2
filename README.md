@@ -1,6 +1,8 @@
 # PSO, GA and GP for Neural Network Optimisation (Gradient-Free Methods)
 Natural Computing 2020/2021: Assignment 2
 
+## Final Grade: 81/100
+
 ## Abstract
 We explore optimisation of Neural Networks with differing amounts of hidden neurons and layers using gradient-free algorithms. We see that in general, classical optimisation methods reminiscent of Stochastic Gradient Descent tend to perform better than gradient-free methods such as Particle Swarm Optimisation, Genetic Algorithms, and Genetic Programming. We see that although optima reached by gradient-free methods are not as 'good' as classical gradient-based methods, they are nevertheless good enough. That is, we reach very small errors on test sets generalising to unseen data. The main difference being time to converge.
 
@@ -15,19 +17,19 @@ Gradient-free algorithms will then be compared to baseline NNs optimised using s
 pip install -r requirements.txt
 ```
 
-## Task 1: Particle Swarm Optimisation
+## Task 1: Particle Swarm Optimisation  45/50
 
 ****
 
 Run the notebook "Task1.ipynb" under the directory "Task 1 Particle swarm optimisation" and follow the instructions
 
-## Task 2: Genetic Algorithm
+## Task 2: Genetic Algorithm  20/25
 
 ****
 
 Run the notebook "GeneticAlgorithm.ipynb" under the directory "Task 2 Genetic Algorithms" and follow the instructions
 
-## Task 3: Genetic Programming
+## Task 3: Genetic Programming  16/25
 
 ****
 
